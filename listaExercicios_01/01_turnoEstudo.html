@@ -11,10 +11,25 @@
     */
 
     //ENTRADA
-
+    const turno = toString(prompt("Informe o turno em que voce estuda (M-matutino ou V-Vespertino ou N- Noturno)"))
     
     //PROCESSAMENTO
-
+    let conceito
+    switch (turno.toLowerCase()) {
+        case "m":
+            conceito = "Bom Dia!"
+            break;
+        case "v":
+            conceito = "Boa Tarde!"
+            break; 
+        case "n":
+            conceito = "Boa Noite!"
+            break;
+        default:
+            conceito = "Valor Invalido!"
+            break;
+    }
+    document.write(`${conceito}`)
     
     //SAÍDA
 
